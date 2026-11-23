@@ -1,0 +1,30 @@
+import { useState } from 'react'
+import Navbar from './Components/Navbar'
+import Home from './Components/Home'
+import About from './Components/About'
+import Skills from './Components/Skills'
+import Projects from './Components/Projects'
+import Contact from './Components/Contact'
+import Footer from './Components/Footer'
+
+function App() {
+  const [dark, setDark] = useState(false)
+
+  return (
+    <div className={dark ? 'app dark' : 'app'}>
+      <Navbar />
+      <Home />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
+      <Footer />
+
+      <button className="theme-btn" onClick={() => setDark(!dark)}>
+        {dark ? 'Light mode' : 'Dark mode'}
+      </button>
+    </div>
+  )
+}
+
+export default App
