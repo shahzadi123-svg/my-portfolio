@@ -12,7 +12,7 @@ function Navbar() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="navbar">
+    <header className="Navbar">
       <a href="#home" className="logo">Farah<span>.</span></a>
 
       <button
